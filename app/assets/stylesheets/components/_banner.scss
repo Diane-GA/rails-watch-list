@@ -1,0 +1,17 @@
+.banner {
+  background-image: asset-url("cinema.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.banner h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.banner h3 {
+  text-align: center;
+  color: white;
+  font-weight: 100;
+}

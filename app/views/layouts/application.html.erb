@@ -11,6 +11,14 @@
   </head>
 
   <body>
+  <%# navbar %>
+    <div class= "navbar-watchlist navbar-collapse p-2 d-flex">
+      <%= image_tag "0hnl_8x9s_221103.jpg", alt: "popcorn image", class: "mr-auto"%>
+      <div>
+        <%= link_to "My lists", lists_path, class: "btn btn-info" %>
+        <%= link_to "New list", new_list_path, class: "btn btn-info" %>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
