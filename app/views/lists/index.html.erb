@@ -22,7 +22,10 @@
 <div class = "container m-2 p-3">
   <ul class = "d-flex flex-wrap">
     <% @lists.each do |list| %>
-    <li class ="card p-3 m-3 list-card"><%= list.name %></li>
+
+      <%=link_to list_path(list.id), class: "text-decoration-none" do %>
+        <li class ="card p-3 m-3 list-card"><%= list.name %></li>
+      <% end %>
     <% end %>
   </ul>
 </div>
